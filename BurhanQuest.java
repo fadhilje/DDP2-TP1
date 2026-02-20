@@ -227,8 +227,8 @@ public class BurhanQuest {
             System.out.println("6. Menyelesaikan quest");
             System.out.println("7. Filter daftar quest");
             System.out.println("8. Filter daftar pengembara");
-            System.out.println("9.Tampilkan daftar quest terurut");
-            System.out.println("10.Tampilkan daftar pengembara terurut");
+            System.out.println("9. Tampilkan daftar quest terurut");
+            System.out.println("10. Tampilkan daftar pengembara terurut");
             System.out.println("11. Gatcha Reward."); // Pilihan untuk subtask 6
             System.out.println("12. Keluar");
             System.out.print("Masukkan pilihan: ");
@@ -424,12 +424,12 @@ public class BurhanQuest {
                                 levelTraveler = Integer.parseInt(levelInp);
                                 if (levelTraveler == 1){
                                     exp = 0;
-                                    travelerData += "P" + (travelerId++) + NAME_IDENTIFIER + nameTraveler + LEVEL_IDENTIFIER + levelTraveler + EXP_IDENTIFIER + exp + STATUS_IDENTIFIER + status + "\n";
+                                    travelerData += "P" + (travelerId++) + NAME_IDENTIFIER + nameTraveler + LEVEL_IDENTIFIER + levelTraveler + EXP_IDENTIFIER + exp + GP_IDENTIFIER + 0 + STATUS_IDENTIFIER + status + "\n";
                                     travelerCount += 1;
                                     System.out.println("Data pengembara berhasil ditambahkan!");
                                 }else if(levelTraveler > 1 && levelTraveler <= 20){
                                     exp =(int) (5000 * Math.pow(2, levelTraveler- 2));
-                                    travelerData += "P" + (travelerId++) + NAME_IDENTIFIER+ nameTraveler + LEVEL_IDENTIFIER + levelTraveler + EXP_IDENTIFIER + exp + STATUS_IDENTIFIER + status + "\n";
+                                    travelerData += "P" + (travelerId++) + NAME_IDENTIFIER+ nameTraveler + LEVEL_IDENTIFIER + levelTraveler + EXP_IDENTIFIER + exp +GP_IDENTIFIER + 0 + STATUS_IDENTIFIER + status + "\n";
                                     travelerCount += 1;
                                     System.out.println("Data pengembara berhasil ditambahkan!");
                                 }else{
